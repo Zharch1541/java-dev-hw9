@@ -4,7 +4,7 @@ name: HW19
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
