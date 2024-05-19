@@ -1,4 +1,4 @@
-name: HW19
+name: run
 
 on:
   pull_request:
@@ -15,7 +15,7 @@ jobs:
           distribution: 'temurin'
 
         - name: Setup Gradle
-          uses: gradle/gradle-build-action@v2
+          uses: gradle/actions/setup-gradle@417ae3ccd767c252f5661f1ace9f835f9654f2b5
 
         - name: Run tests
           run: ./gradlew test
